@@ -1,0 +1,183 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+:root{
+--rosa-principal:#d63384;
+--rosa-hover:#a61e65;
+--fondo:#fff0f6;
+}
+
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background: #fff0f6;
+padding:20px;
+text-align:center;
+}
+
+
+header h1{
+color:var(--rosa-principal);
+margin-bottom:30px;
+}
+
+
+.contenedor{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+}
+
+
+.tarjeta{
+background:white;
+width:260px;
+padding:15px;
+border-radius:15px;
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+transition:all 0.3s ease;
+}
+
+.tarjeta:hover{
+transform:translateY(-8px) scale(1.03);
+}
+
+
+
+.producto-img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+
+
+.precio{
+font-weight:bold;
+color:var(--rosa-principal);
+margin:10px 0;
+font-size:1.1rem;
+}
+
+
+
+button{
+background:var(--rosa-principal);
+color:white;
+border:none;
+padding:8px 15px;
+border-radius:10px;
+cursor:pointer;
+transition:all 0.3s ease;
+}
+
+button:hover{
+background:var(--rosa-hover);
+transform:scale(1.05);
+}
+
+
+
+.carrito{
+background:white;
+padding:15px;
+margin-bottom:20px;
+border-radius:15px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+
+#lista-carrito{
+list-style:none;
+margin-top:10px;
+}
+
+#lista-carrito li{
+padding:8px;
+border-bottom:1px solid #eee;
+}
+
+#lista-carrito button{
+    margin-left: 10px;
+    background:  #fb4f6e;
+    border: none;
+    color: white;
+    padding: 3px 8px;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+#lista-carrito button:hover{
+    background: #d00000;
+}
+
+
+
+footer{
+margin-top:40px;
+}
+
+footer section{
+background:white;
+margin:20px auto;
+padding:20px;
+max-width:600px;
+border-radius:15px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+
+@media (max-width:600px){
+
+.contenedor{
+flex-direction:column;
+align-items:center;
+}
+
+.tarjeta{
+width:90%;
+}
+
+}
+
+
+.btn-primary{
+    background: #d63384;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover{
+    background: #a61e65;
+}
+
+.card{
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+
+.busqueda{
+    margin-bottom: 30px;
+}
+
+#buscar{
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #d63384;
+    outline: none;
+    font-size: 16px;
+}
